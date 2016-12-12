@@ -1,0 +1,829 @@
+fileFormatVersion: 2
+guid: 143f17037c2e16b48885e9a3a3980f6a
+timeCreated: 1478783930
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: alienBeige.png
+    21300002: alienBeige_climb1.png
+    21300004: alienBeige_climb2.png
+    21300006: alienBeige_duck.png
+    21300008: alienBeige_hurt.png
+    21300010: alienBeige_jump.png
+    21300012: alienBeige_stand.png
+    21300014: alienBeige_swim1.png
+    21300016: alienBeige_swim2.png
+    21300018: alienBeige_walk1.png
+    21300020: alienBeige_walk2.png
+    21300022: alienBlue.png
+    21300024: alienBlue_climb1.png
+    21300026: alienBlue_climb2.png
+    21300028: alienBlue_duck.png
+    21300030: alienBlue_hurt.png
+    21300032: alienBlue_jump.png
+    21300034: alienBlue_stand.png
+    21300036: alienBlue_swim1.png
+    21300038: alienBlue_swim2.png
+    21300040: alienBlue_walk1.png
+    21300042: alienBlue_walk2.png
+    21300044: alienGreen.png
+    21300046: alienGreen_climb1.png
+    21300048: alienGreen_climb2.png
+    21300050: alienGreen_duck.png
+    21300052: alienGreen_hurt.png
+    21300054: alienGreen_jump.png
+    21300056: alienGreen_stand.png
+    21300058: alienGreen_swim1.png
+    21300060: alienGreen_swim2.png
+    21300062: alienGreen_walk1.png
+    21300064: alienGreen_walk2.png
+    21300066: alienPink.png
+    21300068: alienPink_climb1.png
+    21300070: alienPink_climb2.png
+    21300072: alienPink_duck.png
+    21300074: alienPink_hurt.png
+    21300076: alienPink_jump.png
+    21300078: alienPink_stand.png
+    21300080: alienPink_swim1.png
+    21300082: alienPink_swim2.png
+    21300084: alienPink_walk1.png
+    21300086: alienPink_walk2.png
+    21300088: alienYellow.png
+    21300090: alienYellow_climb1.png
+    21300092: alienYellow_climb2.png
+    21300094: alienYellow_duck.png
+    21300096: alienYellow_hurt.png
+    21300098: alienYellow_jump.png
+    21300100: alienYellow_stand.png
+    21300102: alienYellow_swim1.png
+    21300104: alienYellow_swim2.png
+    21300106: alienYellow_walk1.png
+    21300108: alienYellow_walk2.png
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alienBeige.png
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 57
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_climb1.png
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 242
+        width: 66
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_climb2.png
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 49
+        width: 66
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_duck.png
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 348
+        width: 67
+        height: 72
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_hurt.png
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 420
+        width: 67
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_jump.png
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 419
+        width: 66
+        height: 93
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_stand.png
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 144
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_swim1.png
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 319
+        width: 69
+        height: 98
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_swim2.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 412
+        width: 70
+        height: 100
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_walk1.png
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 226
+        width: 68
+        height: 93
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBeige_walk2.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 132
+        width: 70
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue.png
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 245
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_climb1.png
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 61
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_climb2.png
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 153
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_duck.png
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 169
+        width: 67
+        height: 72
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_hurt.png
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 420
+        width: 67
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_jump.png
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 149
+        width: 66
+        height: 93
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_stand.png
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 52
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_swim1.png
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 37
+        width: 69
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_swim2.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 315
+        width: 70
+        height: 97
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_walk1.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 152
+        width: 66
+        height: 93
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienBlue_walk2.png
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 241
+        width: 67
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen.png
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 144
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_climb1.png
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 420
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_climb2.png
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 328
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_duck.png
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 17
+        width: 69
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_hurt.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 159
+        width: 69
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_jump.png
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 76
+        width: 67
+        height: 93
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_stand.png
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 236
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_swim1.png
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 417
+        width: 69
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_swim2.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 70
+        height: 97
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_walk1.png
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 143
+        width: 68
+        height: 93
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienGreen_walk2.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 70
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink.png
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 236
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_climb1.png
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 328
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_climb2.png
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 420
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_duck.png
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 88
+        width: 69
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_hurt.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 40
+        width: 69
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_jump.png
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 419
+        width: 67
+        height: 93
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_stand.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 327
+        width: 66
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_swim1.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 417
+        width: 69
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_swim2.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 70
+        height: 97
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_walk1.png
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 50
+        width: 68
+        height: 93
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienPink_walk2.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 70
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow.png
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 337
+        width: 66
+        height: 82
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_climb1.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 70
+        width: 66
+        height: 82
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_climb2.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 245
+        width: 66
+        height: 82
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_duck.png
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 159
+        width: 68
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_hurt.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 251
+        width: 69
+        height: 81
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_jump.png
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 337
+        width: 67
+        height: 83
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_stand.png
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 337
+        width: 66
+        height: 82
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_swim1.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 332
+        width: 69
+        height: 85
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_swim2.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 228
+        width: 70
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_walk1.png
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 236
+        width: 68
+        height: 83
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: alienYellow_walk2.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 70
+        height: 86
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
