@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour {
+
+	private bool movingLeft;
+	private bool movingRight;
 
     public float moveSpeed;
     private float activeMoveSpeed;
@@ -65,21 +69,45 @@ public class PlayerController : MonoBehaviour {
                 activeMoveSpeed = moveSpeed;
             } 
 
-            if( Input.GetAxisRaw ("Horizontal") > 0f)
-            {
-                myRigidbody.velocity = new Vector3(activeMoveSpeed, myRigidbody.velocity.y, 0f);
-                transform.localScale = new Vector3(1f,1f,1f);
-            } else if (Input.GetAxisRaw ("Horizontal") < 0f) {
-                myRigidbody.velocity = new Vector3(-activeMoveSpeed, myRigidbody.velocity.y, 0f);
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-            } else {
-                myRigidbody.velocity = new Vector3(0f, myRigidbody.velocity.y, 0f);
-            }
+//            if( Input.GetAxisRaw ("Horizontal") > 0f)
+//            {
+//                myRigidbody.velocity = new Vector3(activeMoveSpeed, myRigidbody.velocity.y, 0f);
+//                transform.localScale = new Vector3(1f,1f,1f);
+//            } else if (Input.GetAxisRaw ("Horizontal") < 0f) {
+//                myRigidbody.velocity = new Vector3(-activeMoveSpeed, myRigidbody.velocity.y, 0f);
+//                transform.localScale = new Vector3(-1f, 1f, 1f);
+//            } else {
+//                myRigidbody.velocity = new Vector3(0f, myRigidbody.velocity.y, 0f);
+//            }
+//
+//            if(Input.GetButtonDown("Jump") && isGrounded) {
+//                myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
+//                jumpSound.Play();
+//            }
 
-            if(Input.GetButtonDown("Jump") && isGrounded) {
-                myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
-                jumpSound.Play();
-            }
+			movingLeft = CrossPlatformInputManager.GetButton("MoveLeft");
+			movingRight = CrossPlatformInputManager.GetButton("MoveRight");
+
+			if (movingRight)
+			{
+				myRigidbody.velocity = new Vector3 (activeMoveSpeed, myRigidbody.velocity.y, 0f);
+				transform.localScale = new Vector3(1f,1f,1f);
+			}
+			else if (movingLeft)
+			{
+				myRigidbody.velocity = new Vector3 (-activeMoveSpeed, myRigidbody.velocity.y, 0f);
+				transform.localScale = new Vector3(-1f, 1f, 1f);
+			}
+			else
+			{
+				myRigidbody.velocity = new Vector3 (0f, myRigidbody.velocity.y, 0f);
+			}
+
+			if(CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
+			{
+				myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
+				jumpSound.Play();
+			}
         }
 
         if(invincibilityCounter>0)

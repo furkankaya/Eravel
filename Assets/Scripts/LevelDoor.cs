@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class LevelDoor : MonoBehaviour {
 
@@ -51,7 +52,7 @@ public class LevelDoor : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            if (Input.GetButtonDown("Jump") && unlocked)
+			if (CrossPlatformInputManager.GetButtonDown("Jump") && unlocked)
             {
                 SceneManager.LoadScene(levelToLoad);
             }

@@ -23,6 +23,7 @@ public class PauseScreen : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+			Debug.Log ("esc pressed");
             if(Time.timeScale == 0f)
             {
                 ResumeGame();
