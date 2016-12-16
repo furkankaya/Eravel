@@ -39,7 +39,7 @@ public class GameOver : MonoBehaviour
 
     public void QuitToMainMenu()
     {
-        SceneManager.LoadScene("mainMenu");
+        SceneManager.LoadScene("Main Menu");
     }
 
 }

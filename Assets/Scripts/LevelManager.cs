@@ -91,7 +91,7 @@ public class LevelManager : MonoBehaviour {
         currentLives -= 1;
         livesText.text = "Lives: " + currentLives;
 
-        if(currentLives>0)
+        if(currentLives>=0)
         { 
             StartCoroutine("RespawnCo");
         }
@@ -101,6 +101,7 @@ public class LevelManager : MonoBehaviour {
             gameOverScreen.SetActive(true);
             levelMusic.Stop();
             gameOverMusic.Play();
+			currentLives = 3;	///// !!!!!!!!!!! sabit 3 değeri verme
             //levelMusic.volume /= 2;
         }
     }
