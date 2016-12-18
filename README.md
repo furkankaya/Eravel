@@ -3,6 +3,10 @@ A 2D platformer game for Anroid OS
 
 ##Update List
 
+Update 0.62
+- Light effects added to torches.
+- Project structure: Survival level graphic assets added.
+
 Update 0.61
 - Touch joystick is improved. It allows analog input now.
 - Main character controls are improved. Main character now has different
