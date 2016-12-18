@@ -46,6 +46,12 @@ TagManager:
   - name: Background
     uniqueID: 3709018797
     locked: 0
+  - name: Background Objects
+    uniqueID: 3834781871
+    locked: 0
+  - name: World
+    uniqueID: 2900785021
+    locked: 0
   - name: World Objects
     uniqueID: 1550397943
     locked: 0
@@ -54,4 +60,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1153425595
+    locked: 0
+  - name: Foreground
+    uniqueID: 4069309193
+    locked: 0
+  - name: Ground
+    uniqueID: 1222343825
     locked: 0

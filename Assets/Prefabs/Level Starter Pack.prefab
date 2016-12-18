@@ -13,7 +13,7 @@ Prefab:
   m_IsPrefabParent: 1
 --- !u!1 &1000010000799008
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -965,10 +965,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4000013479935122}
   - {fileID: 4000011961938098}
   m_Father: {fileID: 4000013642212872}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &4000010918516970
 Transform:
   m_ObjectHideFlags: 1
@@ -981,7 +980,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013642212872}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!4 &4000011072118986
 Transform:
   m_ObjectHideFlags: 1
@@ -1022,7 +1021,7 @@ Transform:
   - {fileID: 4000012211738934}
   - {fileID: 4000011072118986}
   m_Father: {fileID: 4000010791108214}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!4 &4000012211738934
 Transform:
   m_ObjectHideFlags: 1
@@ -1100,12 +1099,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010000799008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7, z: 10}
+  m_LocalPosition: {x: 2.32, y: -4.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4000010791108214}
-  m_RootOrder: 0
+  m_Father: {fileID: 4000013642212872}
+  m_RootOrder: 1
 --- !u!4 &4000013642212872
 Transform:
   m_ObjectHideFlags: 1
@@ -1118,6 +1117,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000012682049464}
+  - {fileID: 4000013479935122}
   - {fileID: 4000014247871118}
   - {fileID: 4000010791108214}
   - {fileID: 224000011889755568}
@@ -1152,7 +1152,7 @@ Transform:
   - {fileID: 4000013905378514}
   - {fileID: 4000012983957506}
   m_Father: {fileID: 4000013642212872}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!20 &20000013642185056
 Camera:
   m_ObjectHideFlags: 1
@@ -1229,9 +1229,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 19.504887, y: 0}
   serializedVersion: 2
-  m_Size: {x: 40, y: 1}
+  m_Size: {x: 74.35379, y: 1}
 --- !u!61 &61000012261931788
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -2190,8 +2190,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1000012290548706}
   followAhead: 5
-  smoothing: 2
-  followTarget: 0
+  smoothing: 1.2
+  followTarget: 1
 --- !u!114 &114000011308987174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4230,7 +4230,7 @@ RectTransform:
   - {fileID: 224000011726732966}
   - {fileID: 224000010383982802}
   m_Father: {fileID: 4000013642212872}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
