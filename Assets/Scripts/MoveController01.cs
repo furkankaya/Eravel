@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BeeController : MonoBehaviour {
+// bağlandığı nesneyi, karakterin leftPoint ve rightPoint child'ları arasında hareket ettirir (örnek: arı, yarasa vs.) ?uçanlarda denendi, yerde de işe yarar mı kontrol et
+// !!!!! nesnenin leftPoint ve rightPoint'i child olarak tanımlanmalıdır !!!!!
+public class MoveController01 : MonoBehaviour {
 
     public Transform leftPoint;
     public Transform rightPoint;
