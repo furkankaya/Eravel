@@ -3,6 +3,13 @@ A 2D platformer game for Anroid OS
 
 ##Update List
 
+Update 0.64
+- Bugfixes.
+
+Update 0.63
+- Village Level added [WIP].
+- 6 village house prefabs created.
+
 Update 0.62
 - Light effects added to torches.
 - Project structure: Survival level graphic assets added.
