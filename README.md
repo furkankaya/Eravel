@@ -3,6 +3,12 @@ A 2D platformer game for Anroid OS
 
 ##Update List
 
+Update 0.65
+- Garden level created [WIP].
+- Garden level's special lighting effect implemented. (Silhouette theme)
+- Castle ruins prefab created.
+- New background system prefab created.
+
 Update 0.64
 - Bugfixes.
 
