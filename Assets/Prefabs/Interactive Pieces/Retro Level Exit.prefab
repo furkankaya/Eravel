@@ -23,7 +23,7 @@ GameObject:
   - 61: {fileID: 61000010398454212}
   - 114: {fileID: 114000013975112390}
   m_Layer: 0
-  m_Name: Level Exit
+  m_Name: Retro Level Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
