@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour {
 	bool isRunning;
 	float runMultiplier;
 
+	public bool autoRun;
+
 	void Start ()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -61,6 +63,8 @@ public class PlayerController : MonoBehaviour {
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround );
 
+
+
         if(knockbackCounter <= 0 && canMove)
         { 
 			// hareketli platform üzerinde aşırı hızlı hareketi engellemek için
@@ -74,11 +78,14 @@ public class PlayerController : MonoBehaviour {
             }
 
 
+
 			// Touch joystick x-axis controller v1
 
 //			Vector2 moveVec = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), 0f) * activeMoveSpeed;
 //			bool isBoosting = CrossPlatformInputManager.GetButton("Run");
 //			myRigidbody.AddForce(moveVec * (isRunning ? runMultiplier : 1));
+
+
 
 
 			// Touch joystick x-axis controller v2
@@ -113,6 +120,12 @@ public class PlayerController : MonoBehaviour {
 			{
 				myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
 				jumpSound.Play();
+			}
+
+			if (autoRun)
+			{
+				myRigidbody.velocity = new Vector3(activeMoveSpeed, myRigidbody.velocity.y, 0f);
+				myAnim.SetFloat ("Speed", 1); 
 			}
 
 
