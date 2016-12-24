@@ -48,6 +48,12 @@ public class PlayerController : MonoBehaviour {
 
 	public bool autoRun;
 
+	public float _timeHeld = 0.0f;
+	public float _timeForFullJump;
+	public float _minJumpForce;
+	public float _maxJumpForce;
+
+
 	void Start ()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -57,6 +63,7 @@ public class PlayerController : MonoBehaviour {
         activeMoveSpeed = moveSpeed;
         canMove = true;
 	}
+
 
 	void Update ()
     {
@@ -76,17 +83,7 @@ public class PlayerController : MonoBehaviour {
             {
                 activeMoveSpeed = moveSpeed;
             }
-
-
-
-			// Touch joystick x-axis controller v1
-
-//			Vector2 moveVec = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), 0f) * activeMoveSpeed;
-//			bool isBoosting = CrossPlatformInputManager.GetButton("Run");
-//			myRigidbody.AddForce(moveVec * (isRunning ? runMultiplier : 1));
-
-
-
+				
 
 			// Touch joystick x-axis controller v2
 
@@ -116,11 +113,34 @@ public class PlayerController : MonoBehaviour {
 				myAnim.SetFloat("Speed", 0f);
           	}
 
-			if(CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
+//			if(CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
+//			{
+//				myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
+//				jumpSound.Play();
+//			}
+
+			if (CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
 			{
-				myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
-				jumpSound.Play();
+				_timeHeld = 0f;
+				Jump ();
 			}
+				
+			if (CrossPlatformInputManager.GetButton("Jump"))
+			{
+//				_timeHeld += Time.deltaTime;
+//				if (_timeHeld >= _timeForFullJump && isGrounded)
+//				{
+//					Jump ();
+//					_timeHeld = 0f;
+//				}
+			}
+
+			if (CrossPlatformInputManager.GetButtonUp("Jump") && isGrounded)
+			{
+//				Jump();
+//				_timeHeld = 0f;
+			}
+
 
 			if (autoRun)
 			{
@@ -248,6 +268,19 @@ public class PlayerController : MonoBehaviour {
             onPlatform = false;
         }
     }
+
+
+	public void Jump()
+	{
+		float verticalJumpForce = ((_maxJumpForce - _minJumpForce) * (_timeHeld / _timeForFullJump)) + _minJumpForce;
+		if (verticalJumpForce > _maxJumpForce)
+		{
+			verticalJumpForce = _maxJumpForce;
+		}
+		Vector2 resolvedJump = new Vector2(0f, verticalJumpForce);
+		myRigidbody.AddForce(resolvedJump, ForceMode2D.Impulse);
+		Debug.Log(resolvedJump.ToString());
+	}
 
 
 }
