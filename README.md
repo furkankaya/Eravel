@@ -4,27 +4,27 @@ A 2D platformer game for Anroid OS
 ##Update List
 
 Update 0.70a
--Mushroom level's prefab created.
+- Mushroom level's prefab created.
 
 Update 0.70
--Mushroom Level created [WIP]
+- Mushroom Level created [WIP]
 
 Update 0.69
--Coins and enemies added into Candy Level [WIP]
--Sand level created [WIP].
--Sand level prefabs created.
--dirt_ground prefabs created.
+- Coins and enemies added into Candy Level [WIP]
+- Sand level created [WIP].
+- Sand level prefabs created.
+- dirt_ground prefabs created.
 
 Update 0.68
--Bugfixes.
+- Bugfixes.
 
 
 Update 0.67
--Candy level created [WIP].
--Level prefabs were created.
+- Candy level created [WIP].
+- Level prefabs were created.
 
 Update 0.66
--Bugfixes
+- Bugfixes
 
 Update 0.65
 - Garden level created [WIP].
