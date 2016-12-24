@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a9c4c89a03c5f1b45b0d5e3bfaa6dcf2
+timeCreated: 1482520076
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Mirza
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9b389a64d50308e468411561dd5c777f, type: 3}
+  - {fileID: 12800000, guid: 30613b5d989b76847be56fd0bf58bc6c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
