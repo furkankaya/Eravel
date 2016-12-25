@@ -43,7 +43,8 @@ public class LevelManager : MonoBehaviour {
     public AudioSource levelMusic;
     public AudioSource gameOverMusic;
 
-
+	[HideInInspector]
+	public bool respawnCoActive;				// boss dövüşünde kullanılan değişken, respawn işleminde olup olunmadığını tutuyor
 
 
     void Start ()
@@ -114,11 +115,17 @@ public class LevelManager : MonoBehaviour {
 
     public IEnumerator RespawnCo()
     {
+		// respawn işleminde olduğunu bildrmek için true yap
+		respawnCoActive = true;
+
         thePlayer.gameObject.SetActive(false);
 
         Instantiate(deathSplosion, thePlayer.transform.position, thePlayer.transform.rotation);
 
         yield return new WaitForSeconds(waitToRespawn);
+
+		// respawn işleminin bittiğini bildrmek için false yap
+		respawnCoActive = false;
 
         healthCount = maxHealth;
         respawning = false;

@@ -19,9 +19,16 @@ public class StompEnemy : MonoBehaviour {
     {
         if(other.tag == "Enemy")
         {
-            other.gameObject.SetActive(false);
-            Instantiate(deathSplosion, other.transform.position, other.transform.rotation); // patlama animasyonu
-            playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, bounceForce, 0f);
+            other.gameObject.SetActive(false);														// düşmanı yok et
+            Instantiate(deathSplosion, other.transform.position, other.transform.rotation); 		// düşmanın yok olduğu yerde efekt oynatılması
+            playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, bounceForce, 0f);	// düşmana hamle yapınca geri sekme
         }
+
+		if (other.tag == "Boss")
+		{
+			playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, bounceForce, 0f);	// boss'a hamle yapınca geri sekme
+			other.transform.parent.GetComponent<Boss>().takeDamage = true;							// boss'u zarar alma moduna sok (işlem Boss script'inde)
+		}
+
     }
 }
