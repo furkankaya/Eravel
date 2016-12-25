@@ -9,6 +9,7 @@ TagManager:
   - MovingPlatform
   - Enemy
   - Boss
+  - TouchJoystick
   layers:
   - Default
   - TransparentFX

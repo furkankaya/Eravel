@@ -53,6 +53,10 @@ public class PlayerController : MonoBehaviour {
 	public float _minJumpForce;
 	public float _maxJumpForce;
 
+	GameObject[] joystick ;
+
+
+
 
 	void Start ()
     {
@@ -62,6 +66,16 @@ public class PlayerController : MonoBehaviour {
         theLevelManager = FindObjectOfType<LevelManager>();
         activeMoveSpeed = moveSpeed;
         canMove = true;
+
+		joystick = GameObject.FindGameObjectsWithTag("TouchJoystick");
+
+		if (autoRun)
+		{
+			foreach (GameObject element in joystick)
+			{
+				element.SetActive(false);
+			}
+		}
 	}
 
 

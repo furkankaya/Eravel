@@ -26,7 +26,7 @@ GameObject:
   - 199: {fileID: 199000010487458716}
   - 114: {fileID: 114000012579833094}
   m_Layer: 0
-  m_Name: Retro Coin x5
+  m_Name: Coin x5 Retro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

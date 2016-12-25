@@ -43,9 +43,14 @@ public class LevelManager : MonoBehaviour {
     public AudioSource levelMusic;
     public AudioSource gameOverMusic;
 
+
+
+
     void Start ()
     {
         thePlayer = FindObjectOfType<PlayerController>();
+
+
 
         objectsToReset = FindObjectsOfType<ResetOnRespawn>();
 
@@ -68,6 +73,7 @@ public class LevelManager : MonoBehaviour {
         }
         
         livesText.text = "Lives: " + currentLives;
+
     }
 
 	void Update ()
