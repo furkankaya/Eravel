@@ -3,23 +3,30 @@ A 2D platformer game for Anroid OS
 
 ##Update List
 
+Update 0.72
+- Final boss level is now functional. Player can now defeat the boss character.
+- Level Exit prefab updated.
+- New Grass Level prefabs created.
+
+Update 0.71
+- Grass level added. [WIP]
+- Autorun levels now does not have joystick on screen.
+- Checkpoint prefabs created.
+- New grass prefabs.
+- Sand spikes fixed.
+- Enemy bugfixes.
 
 Update 0.70
-- Mushroom Level created [WIP]
-- Mushroom level's prefab created.
-- Mushroom Level updated [WIP].
+- Mushroom Level created and completed.
+- Candy Level updated and completed.
+- Sand Level updated and completed.
+- Cave Level created [WIP].
+- New enemies added: Snake, Fly.
+- Character control improvements.
 - Added new fonts.
 - Added new level logos.
-- Mushroom Level updated [WIP].
-- Character control improve.
-- Bugfixes
-- Cave Level created [WIP]
-- New enemies added: snake, fly
-- Level Candy, Sand and Mushroom update.
-- Candy Level completed.
-- Sand Level completed.
-- Mushroom Level completed.
-- Enemy and flag prefabs created.
+- New prefabs for Mushroom theme.
+- Bugfixes.
 
 Update 0.69
 - Coins and enemies added into Candy Level [WIP]
