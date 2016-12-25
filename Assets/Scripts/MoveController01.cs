@@ -1,18 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// bağlandığı nesneyi, karakterin leftPoint ve rightPoint child'ları arasında hareket ettirir (örnek: arı, yarasa vs.) ?uçanlarda denendi, yerde de işe yarar mı kontrol et
+// bağlandığı nesneyi, karakterin leftPoint ve rightPoint child'ları arasında hareket ettirir (örnek: arı, yarasa vs.)
+// uçanlar için Y ekseni kilitlenmelidir
 // !!!!! nesnenin leftPoint ve rightPoint'i child olarak tanımlanmalıdır !!!!!
 public class MoveController01 : MonoBehaviour {
 
-    public Transform leftPoint;
+	public Transform leftPoint;			// aralarında gidip geleceği yatay iki nokta
     public Transform rightPoint;
 
-    public float moveSpeed;
+	public float moveSpeed;				// hareket hızı
 
     private Rigidbody2D myRigidbody;
 
-    private bool movingRight;
+	private bool movingRight;			// gidilen yön
 
     void Start ()
     {
@@ -25,13 +26,15 @@ public class MoveController01 : MonoBehaviour {
         if(movingRight && transform.position.x > rightPoint.position.x)
         {
             movingRight = false;
-            transform.localScale = new Vector3(1f, 1f, 1f);    //görünümü de döndür
+			//görünümü de döndür
+            transform.localScale = new Vector3(1f, 1f, 1f);    
         }
         // sola giderken sol sınır noktasını geçerse, sağa dön
         if(!movingRight && transform.position.x < leftPoint.position.x)
         {
             movingRight = true;
-            transform.localScale = new Vector3(-1f, 1f, 1f);     //görünümü de döndür
+			//görünümü de döndür
+            transform.localScale = new Vector3(-1f, 1f, 1f);     
         }
         // sağa giderken sınırlar içindeyse hızı belirle
         if(movingRight)

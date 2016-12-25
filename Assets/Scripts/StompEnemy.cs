@@ -1,18 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// player karakterin altında, düşmanların üstüne sıçradığında bunu algılayan stompbox'un çalışmasını sağlar
 public class StompEnemy : MonoBehaviour {
 
-    public GameObject deathSplosion;
-    private Rigidbody2D playerRigidbody;
-    public float bounceForce;
+    public GameObject deathSplosion;		// yok edilen düşmanların oynatacağı efekt
+    private Rigidbody2D playerRigidbody;	// oyuncuya kuvvet uygulayabilmek için rigidbody'e referans olacak değişken
+    public float bounceForce;				// düşmanlara hamle sonrası geri sekme kuvvetin büyüklüğü
 
-	void Start () {
+	void Start ()
+	{
         playerRigidbody = transform.parent.GetComponent<Rigidbody2D>();
-	}
-	
-	void Update () {
-	
 	}
 
     void OnTriggerEnter2D(Collider2D other)

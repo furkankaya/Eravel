@@ -96,7 +96,7 @@ public class LevelManager : MonoBehaviour {
     public void Respawn()
     {
         currentLives -= 1;
-        livesText.text = "Lives: " + currentLives;
+        livesText.text = "x " + currentLives;
 
         if(currentLives>=0)
         { 
@@ -132,7 +132,7 @@ public class LevelManager : MonoBehaviour {
         UpdateHeartMeter();
 
         coinCount = 0;
-        coinText.text = "Coins: " + coinCount;
+        coinText.text = "x " + coinCount;
         coinBonusLifeCount = 0;
 
         thePlayer.transform.position = thePlayer.respawnPosition;

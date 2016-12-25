@@ -2,15 +2,15 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+// bu script oyun duraklatıldığında belirecek menüye ait fonksiyonları içerir.
+// bu fonksiyonları çağıran butonlar ve çağırma işlemleri editör üzerinden düzenlenir.
 public class PauseScreen : MonoBehaviour {
 
     public string levelSelect;
     public string mainMenu;
 
     private LevelManager theLevelManager;
-
     public GameObject thePauseScreen;
-
     private PlayerController thePlayer;
 
 	void Start ()

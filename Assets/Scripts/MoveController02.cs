@@ -1,11 +1,12 @@
 ﻿ using UnityEngine;
 using System.Collections;
 
+// bağlandığı nesne, kamera görüş açısına girdiği anda sola doğru ilerlemeye başlar (saldıran düşmanlar vs.)
 public class MoveController02 : MonoBehaviour
 {
 
-    public float moveSpeed;
-    private bool canMove;
+    public float moveSpeed;		// hareket hızı
+    private bool canMove;		// ekrana girip girmediğine göre hareket edebilirlik durumu
 
     private Rigidbody2D myRigidbody;
 
@@ -14,7 +15,7 @@ public class MoveController02 : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
 	}
 
-    // kamera görüş açısındaysa sola -x yönde hareket eder
+    // nesne kamera görüş açısındaysa sola -x yönde hareket eder
 	void Update ()
     {
 	    if(canMove)
@@ -29,7 +30,7 @@ public class MoveController02 : MonoBehaviour
         canMove = true;
     }
 
-    // boşluğa düşen örümceğin nesnesinin deaktif edilmesini sağlar
+    // hareket eden nesnenin KillPlane'e değerse deaktif edilmesini sağlar
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "KillPlane")
@@ -40,7 +41,7 @@ public class MoveController02 : MonoBehaviour
 
     void OnEnable()
     {
-        // respawn sonrası aktif edilen örümceğin, hareket için yine ekrana girmeyi beklemesini sağlar
+        // respawn sonrası enable edilen nesnenin, hareket için yine ekrana girmeyi beklemesini sağlar
         canMove = false;
     }
 

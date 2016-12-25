@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+// bu script ana menüye ait fonksiyonları içerir.
+// bu fonksiyonları çağıran butonlar ve çağırma işlemleri editör üzerinden düzenlenir.
 public class MainMenu : MonoBehaviour {
 
     public string firstLevel;
