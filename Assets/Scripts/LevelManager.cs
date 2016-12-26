@@ -131,7 +131,7 @@ public class LevelManager : MonoBehaviour {
         respawning = false;
         UpdateHeartMeter();
 
-        coinCount = 0;
+        coinCount = 0; 
         coinText.text = "x " + coinCount;
         coinBonusLifeCount = 0;
 
