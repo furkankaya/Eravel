@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 
+// ana karakterin hareketlerini vs. içeren script
 public class PlayerController : MonoBehaviour {
 
 	private bool movingLeft;
@@ -67,8 +68,8 @@ public class PlayerController : MonoBehaviour {
         activeMoveSpeed = moveSpeed;
         canMove = true;
 
+		// bölüm auto-run mekaniğindeyse, ekrandan joystick yön tuşunu kaldır
 		joystick = GameObject.FindGameObjectsWithTag("TouchJoystick");
-
 		if (autoRun)
 		{
 			foreach (GameObject element in joystick)
@@ -239,6 +240,7 @@ public class PlayerController : MonoBehaviour {
         {
             stompBox.SetActive(false);
         }
+			
 
     }
 
@@ -255,7 +257,6 @@ public class PlayerController : MonoBehaviour {
         {
             //gameObject.SetActive(false);
             //transform.position = respawnPosition;
-			Debug.Log("killplane hit");
             theLevelManager.Respawn();
         }
 

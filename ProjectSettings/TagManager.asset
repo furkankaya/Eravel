@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Boss
   - TouchJoystick
+  - EnterButton
+  - UnlockButton
   layers:
   - Default
   - TransparentFX

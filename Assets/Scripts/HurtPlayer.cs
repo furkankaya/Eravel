@@ -1,25 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HurtPlayer : MonoBehaviour {
-
+// bu script oyuncu sağlık puanını düşürecek nesnelere bağlanır
+public class HurtPlayer : MonoBehaviour
+{
 	private LevelManager theLevelManager;
 
+	// nesnenin oyuncudan düşüreceği sağlık puanı ( arayüzdeki 1 kalp == 2 sağlık puanı)
     public int damageToGive;
 
-	void Start () {
+	void Start ()
+	{
 		theLevelManager = FindObjectOfType<LevelManager>();
 	}
-	
-	void Update () {
-	
-	}
-
+		
 	void OnTriggerEnter2D (Collider2D other)
     {
         if(other.tag == "Player")
         {
-            //theLevelManager.Respawn();
+            // oyuncuya zarar verme fonksiyonu LevelManager üzerinden çalışır
             theLevelManager.HurtPlayer(damageToGive);
         }
 

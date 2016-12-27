@@ -22,7 +22,7 @@ public class CheckpointController : MonoBehaviour {
 		{
 			// aktif durumdaki sprite'a geç
             mySpriteRenderer.sprite = flagOpen;
-			// durumu aktif olarak değiştir
+			// durumu aktif olarak değiştir (başka script'ten kontrol edilecek?)
             checkpointActive = true;
         }
     }
