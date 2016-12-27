@@ -23,7 +23,6 @@ public class PauseScreen : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-			Debug.Log ("esc pressed");
             if(Time.timeScale == 0f)
             {
                 ResumeGame();
@@ -35,6 +34,7 @@ public class PauseScreen : MonoBehaviour {
         }
 	}
 
+	// oyunu durdurup pause arayüzünü ekrana getiren fonksiyon
     public void PauseGame()
     {
         Time.timeScale = 0f;
@@ -53,9 +53,8 @@ public class PauseScreen : MonoBehaviour {
 
     public void LevelSelect()
     {
-        PlayerPrefs.SetInt("PlayerLives", theLevelManager.currentLives);
-        PlayerPrefs.SetInt("CoinCount", theLevelManager.coinCount);
-
+        //PlayerPrefs.SetInt("PlayerLives", theLevelManager.currentLives);
+        //PlayerPrefs.SetInt("CoinCount", theLevelManager.coinCount);
         Time.timeScale = 1f;
         SceneManager.LoadScene(levelSelect);
     }

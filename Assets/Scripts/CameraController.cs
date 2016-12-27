@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// kameranın oyuncuyu takibini sağlar ve düzenler
 public class CameraController : MonoBehaviour {
 
     public GameObject target;
@@ -12,11 +13,13 @@ public class CameraController : MonoBehaviour {
 
     public bool followTarget;
 
-	void Start () {
+	void Start ()
+	{
         followTarget = true;
 	}
 	
-	void Update () {
+	void Update ()
+	{
 
         if(followTarget)
         { 
@@ -25,7 +28,8 @@ public class CameraController : MonoBehaviour {
             if(target.transform.localScale.x > 0f)  //facing right
             {
                 targetPosition = new Vector3(targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
-            } else                                  //facing left
+            }
+			else                                  //facing left
             {
                 targetPosition = new Vector3(targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
             }

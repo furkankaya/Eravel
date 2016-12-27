@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// bu script sağlık puanı veren jetonlara bağlanır
 public class HealthPickup : MonoBehaviour
 {
-
+	// nesnenin vereceği sağlık puanı
     public int healtToGive;
 
     private LevelManager theLevelManager;
@@ -12,15 +13,12 @@ public class HealthPickup : MonoBehaviour
     {
         theLevelManager = FindObjectOfType<LevelManager>();
     }
-
-    void Update()
-    {
-
-    }
-
+		
     void OnTriggerEnter2D(Collider2D other)
     {
+		// sağlık ekleme metodu LevelManager üzerinden çalışır
         theLevelManager.GiveHealth(healtToGive);
+		// toplanan jetonu ekrandan yok et
         gameObject.SetActive(false);
     }
 }

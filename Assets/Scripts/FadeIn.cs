@@ -2,11 +2,12 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class FadeIn : MonoBehaviour {
+// bölüm açılışında siyah ekrandan normal bölüme geçiş efekti (geçişin yapılacağı UI Image'a bu script eklenir)
+public class FadeIn : MonoBehaviour
+{
+    public float fadeTime;		// geçişin süresi
 
-    public float fadeTime;
-
-    private Image blackScreen;
+    private Image blackScreen;	// hangi resimden oyuna geçiş yapılacağı
 
 	void Start () {
         blackScreen = GetComponent<Image>();

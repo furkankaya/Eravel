@@ -494,10 +494,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e142f8a94c1df744b4c80037ee05110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: Level1
+  firstLevel: LevelA
   levelSelect: LevelSelect
-  levelNames: []
-  startingLives: 0
+  levelNames:
+  - LevelA
+  - LevelB
+  startingLives: 3
 --- !u!1 &1558078282
 GameObject:
   m_ObjectHideFlags: 0
