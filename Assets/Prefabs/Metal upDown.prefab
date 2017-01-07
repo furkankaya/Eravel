@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011321466388}
   - 114: {fileID: 114000010095891288}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Metal upDown
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010886466202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: -1944569537103914328, guid: 0000000000000000d000000000000000, type: 0}
@@ -53,7 +53,7 @@ GameObject:
   - 61: {fileID: 61000012497915136}
   m_Layer: 8
   m_Name: g 1x3 2
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011743034348}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 3932251862328519117, guid: 0000000000000000d000000000000000, type: 0}
@@ -140,8 +140,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010397741270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 217.2759, y: 18.91814, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 168.46068, y: 15.786208, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -246,7 +246,7 @@ MonoBehaviour:
   objectToMove: {fileID: 1000011731069840}
   startPoint: {fileID: 4000011743034348}
   endPoint: {fileID: 4000010886466202}
-  moveSpeed: 3
+  moveSpeed: 2.5
 --- !u!212 &212000011370396200
 SpriteRenderer:
   m_ObjectHideFlags: 1

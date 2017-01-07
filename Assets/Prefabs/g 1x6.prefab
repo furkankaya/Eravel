@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010776644426}
   - 212: {fileID: 212000010328312408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal_ground (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011508655844}
   - 212: {fileID: 212000010014195072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal_ground (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011713109480}
   - 212: {fileID: 212000012305908178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal_ground (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013999011178}
   - 212: {fileID: 212000012520515692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal_ground (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012168912214}
   - 212: {fileID: 212000012503024312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal_ground (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013432675246}
   - 212: {fileID: 212000013752710146}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal_ground (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000014045452170}
   - 61: {fileID: 61000012720816512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: g 1x6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,8 +207,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013716022536}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.688, y: 4.106, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 116.76512, y: 18.91082, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
