@@ -2806,7 +2806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   myRigidbody: {fileID: 0}
-  jumpSpeed: 20
+  jumpSpeed: 15.3
   groundCheck: {fileID: 4000013401558766}
   groundCheckRadius: 0.25
   whatIsGround:

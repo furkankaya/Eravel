@@ -499,6 +499,7 @@ MonoBehaviour:
   levelNames:
   - LevelA
   - LevelB
+  - LevelC
   startingLives: 3
 --- !u!1 &1558078282
 GameObject:
