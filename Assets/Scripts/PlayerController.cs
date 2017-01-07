@@ -85,8 +85,6 @@ public class PlayerController : MonoBehaviour {
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround );
 
-
-
         if(knockbackCounter <= 0 && canMove)
         { 
 			// hareketli platform üzerinde aşırı hızlı hareketi engellemek için
@@ -119,7 +117,10 @@ public class PlayerController : MonoBehaviour {
 					activeMoveSpeed /= 2;
 				}
 	          	myRigidbody.velocity = new Vector3(-activeMoveSpeed, myRigidbody.velocity.y, 0f);
-	          	transform.localScale = new Vector3(-1f, 1f, 1f);
+				if (!autoRun)
+				{
+					transform.localScale = new Vector3 (-1f, 1f, 1f);
+				}
 				myAnim.SetFloat("Speed", Mathf.Abs(CrossPlatformInputManager.GetAxis("Horizontal")));
     		}
 			else
@@ -128,33 +129,33 @@ public class PlayerController : MonoBehaviour {
 				myAnim.SetFloat("Speed", 0f);
           	}
 
-//			if(CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
+			if(CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
+			{
+				myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
+				jumpSound.Play();
+			}
+
+//			if (CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
 //			{
-//				myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
-//				jumpSound.Play();
-//			}
-
-			if (CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
-			{
-				_timeHeld = 0f;
-				Jump ();
-			}
-				
-			if (CrossPlatformInputManager.GetButton("Jump"))
-			{
-//				_timeHeld += Time.deltaTime;
-//				if (_timeHeld >= _timeForFullJump && isGrounded)
-//				{
-//					Jump ();
-//					_timeHeld = 0f;
-//				}
-			}
-
-			if (CrossPlatformInputManager.GetButtonUp("Jump") && isGrounded)
-			{
-//				Jump();
 //				_timeHeld = 0f;
-			}
+//				Jump ();
+//			}
+//				
+//			if (CrossPlatformInputManager.GetButton("Jump"))
+//			{
+////				_timeHeld += Time.deltaTime;
+////				if (_timeHeld >= _timeForFullJump && isGrounded)
+////				{
+////					Jump ();
+////					_timeHeld = 0f;
+////				}
+//			}
+//
+//			if (CrossPlatformInputManager.GetButtonUp("Jump") && isGrounded)
+//			{
+////				Jump();
+////				_timeHeld = 0f;
+//			}
 
 
 			if (autoRun)

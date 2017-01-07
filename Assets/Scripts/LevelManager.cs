@@ -185,6 +185,10 @@ public class LevelManager : MonoBehaviour
         if(healthCount<maxHealth)
         { 
             healthCount += healtToGive;
+			if (healthCount > maxHealth)
+			{
+				healthCount = maxHealth;
+			}
         }
         coinSound.Play();
         UpdateHeartMeter();

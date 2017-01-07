@@ -9,7 +9,7 @@ public class LevelDoor : MonoBehaviour
 
     public string levelToLoad;			// kapının ait olduğu bölüm
 
-	[HideInInspector]
+	//[HideInInspector]
     public bool unlocked;				// bölümün açık olup olmadığı
 
     public Sprite doorBottomOpen;		//
@@ -32,6 +32,7 @@ public class LevelDoor : MonoBehaviour
 	{
 		// Level01 her zaman açık
         PlayerPrefs.SetInt("Level01", 1);
+		PlayerPrefs.SetInt("LevelA", 1);
 
 		// kapının ait olduğu level'in açık olup olmadığı PlayerPrefs'ten okunur
         if(PlayerPrefs.GetInt(levelToLoad) == 1)
@@ -75,10 +76,12 @@ public class LevelDoor : MonoBehaviour
 		// bölüm kilidi açılabilir durumdaysa ve unlock tuşuna basılırsa bölüm açma diyalogu göster
 		if (canUnlockLevel)
 		{
-			
-			if ( CrossPlatformInputManager.GetButtonDown ("EnterDoor") && PlayerPrefs.GetInt("CoinWallet")>levelValue )
+			if ( CrossPlatformInputManager.GetButtonDown ("UnlockDoor") && PlayerPrefs.GetInt("CoinWallet")>levelValue )
 			{
 				unlocked = true;
+				doorTop.sprite = doorTopOpen;
+				doorBottom.sprite = doorBottomOpen;
+
 				unlockDoorButton.SetActive (false);
 				enterDoorButton.SetActive (true);
 			}
@@ -96,17 +99,12 @@ public class LevelDoor : MonoBehaviour
 			if (unlocked)
 			{
 				enterDoorButton.SetActive (true);
-				{
-					canLoadLevel = true;
-				}
+				canLoadLevel = true;
 			}
 			else
 			{
 				unlockDoorButton.SetActive (true);
-				{
-					canUnlockLevel = true;
-				}
-
+				canUnlockLevel = true;
 			}
 
         }
@@ -119,6 +117,7 @@ public class LevelDoor : MonoBehaviour
 			enterDoorButton.SetActive (false);
 			unlockDoorButton.SetActive (false);
 			canLoadLevel = false;
+			canUnlockLevel = false;
 		}
 	}
 }
