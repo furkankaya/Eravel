@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class StoryBookA : MonoBehaviour {
 
 	public Text text;
+
+	public Text buttonA;
+	public Text buttonB;
+	public Text buttonC;
 
 	private enum States {
 		cell, mirror, sheets_0, lock_0, cell_mirror, sheets_1, lock_1, corridor_0, stairs_0, stairs_1,
@@ -116,37 +121,74 @@ public class StoryBookA : MonoBehaviour {
 	}
 
 	void cell () {
-		text.text = "Eravel ufacık bir odada uyanıp, endişeyle etrafına bakındı. " +
-			"Yerlerin kirli paçavralarla dolu olduğunu fark etti. Duvarda ise bir ayna asılıydı. " +
-			"Odanın kapısını kontrol ettiğinde dışarıdan kilitlenmiş olduğunu anladı. Birisi onu odaya hapsetmişti.\n\n\n" +
-			"PAÇAVRALARI İNCELE    AYNAYI İNCELE     KAPININ KİLİDİNİ İNCELE" ;
-		if 		(Input.GetKeyDown(KeyCode.S)) 	{myState = States.sheets_0;}
-		else if (Input.GetKeyDown(KeyCode.M)) 	{myState = States.mirror;}
-		else if (Input.GetKeyDown(KeyCode.L)) 	{myState = States.lock_0;}
+		text.text = 
+			"Eravel giriş kapısına yaklaşıp etrafına bakındı. " +
+			"Robotlar sırayla ilerleyip ana kapıdan içeri giriyorlardı. " +
+			"Kapının etrafındaki cihazlar, sıranın en önündeki robotu tarayıp bir tür giriş izni veriyor gibiydi. " +
+			"Kapı her seferinde yalnızca bir tane robotun geçebileceği kadar açık kalıyor, ardından kapanıyordu. " +
+			"Duvarda üzerinde yazılar ve işaretler olan bir tabela asılıydı. " +
+			"Yan tarafta ise tahtadan, eski görünümlü bir kapı vardı. ";
+		
+		buttonA.text = "TABELAYI İNCELE";
+		buttonB.text = "ANA KAPIDAN İÇERİ GİR";
+		buttonC.text = "TAHTA KAPIDAN İÇERİ GİR";
+
+		if (CrossPlatformInputManager.GetButtonDown("ButtonA"))
+			myState = States.sheets_0;
+		else if (CrossPlatformInputManager.GetButtonDown("ButtonB"))
+			myState = States.lock_0;
+		else if (CrossPlatformInputManager.GetButtonDown("ButtonC"))
+			myState = States.mirror;
 	}
 
 	void mirror() {
-		text.text = "The dirty old mirror on the wall seems loose.\n\n" +
-			"Press T to Take the mirror, or R to Return to cell" ;
-		if 		(Input.GetKeyDown(KeyCode.T)) 	{myState = States.cell_mirror;}
-		else if (Input.GetKeyDown(KeyCode.R)) 	{myState = States.cell;}
+		text.text = 
+			"Tahta kapının ardında tozlu, ufak bir oda vardı. " +
+			"Odada pek çok metal kutu, demir parçaları ve değişik aletler bulunuyordu. " +
+			"Fakat Eravel'in dikkatini çeken şey, odanın köşesinde çürümeye terk edilmiş robot parçaları oldu. " +
+			"Bu parçaları kullanarak kendine robot süsü verebilirdi. ";
+
+		buttonA.text = "ROBOT KILIĞINA GİR";
+		buttonB.text = " ";
+		buttonC.text = "GERİ DÖN";
+
+		if (CrossPlatformInputManager.GetButtonDown("ButtonA"))
+			myState = States.cell_mirror;
+		else if (CrossPlatformInputManager.GetButtonDown("ButtonC"))
+			myState = States.cell;
 	}
 
 	void cell_mirror() {
-		text.text = "You are still in your cell, and you STILL want to escape! There are " +
-			"some dirty sheets on the bed, a mark where the mirror was, " +
-			"and that pesky door is still there, and firmly locked!\n\n" +
-			"Press S to view Sheets, or L to view Lock" ;
-		if 		(Input.GetKeyDown(KeyCode.S)) 	{myState = States.sheets_1;}
-		else if (Input.GetKeyDown(KeyCode.L)) 	{myState = States.lock_1;}
+		text.text = 
+			"Eravel robot kılığına girmiş halde girişe geri döndü. " +
+			"Tabela halen duvarda asılıydı. " +
+			"Robotlar ise ana kapıdan içeri girmeye devam ediyorlardı. ";
+
+		buttonA.text = "TABELAYI İNCELE";
+		buttonB.text = " ";
+		buttonC.text = "ANA KAPIYA YÖNEL";
+
+		if (CrossPlatformInputManager.GetButtonDown("ButtonA"))
+			myState = States.sheets_1;
+		else if (CrossPlatformInputManager.GetButtonDown("ButtonC"))
+			myState = States.lock_1;
 	}
 
 	void sheets_0 () {
-		text.text = "You can't believe you sleep in these things. Surely it's " +
-			"time somebody changed them. The pleasures of prison life " +
-			"I guess!\n\n" +
-			"Press R to Return to roaming your cell" ;
-		if (Input.GetKeyDown(KeyCode.R)) 		{myState = States.cell;}
+		text.text =
+			"Duvarda asılı olan şey, bir tür uyarı levhasıydı. " +
+			"Eravel üzerinde yazanları okudu: " +
+			"\"Benimle işi olanlar robotlarım vasıtasıyla isteklerini iletebilirler. " +
+			"Bu kapı sadece robotlarımın kullanımı içindir ve başkaları tarafından kullanılması yasaktır. " +
+			"Kapıdaki güvenlik önlemleri robotlarım haricinde kimseye izin vermezler. " +
+			" - ROBO-MEKANiK USTASI BUO\"";
+
+		buttonA.text = " ";
+		buttonB.text = "GİRİŞE GERİ DÖN";
+		buttonC.text = " ";
+
+		if (CrossPlatformInputManager.GetButtonDown("ButtonB"))
+			myState = States.cell;
 	}
 
 	void sheets_1() {
@@ -157,11 +199,18 @@ public class StoryBookA : MonoBehaviour {
 	}
 
 	void lock_0() {
-		text.text = "This is one of those button locks. You have no idea what the " +
-			"combination is. You wish you could somehow see where the dirty " +
-			"fingerprints were, maybe that would help.\n\n" +
-			"Press R to Return to roaming your cell" ;
-		if (Input.GetKeyDown(KeyCode.R)) 		{myState = States.cell;}
+		text.text =
+			"Eravel robotların yanından ilerleyip kapının önüne geldi. " +
+			"Şansını deneyip kapıyı iteklese de bunun işe yaramayacağını biliyordu. " +
+			"O sırada kapının etrafındaki tarama cihazlarından çıkan ışık demetleri gözünü aldı. " +
+			"Kırmızı bir ışık yanıp sönmeye başlarken, mekanik bir ses duyuldu: \"GİRİŞ ONAYLANMADI!\". ";
+
+		buttonA.text = " ";
+		buttonB.text = "GİRİŞE GERİ DÖN";
+		buttonC.text = " ";
+
+		if (CrossPlatformInputManager.GetButtonDown("ButtonB"))
+			myState = States.cell;
 	}
 
 	void lock_1() {
