@@ -10,16 +10,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
   - enabled: 1
+    path: Assets/Scenes/Level0.5.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 01.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 02.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 03.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 04.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 05.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 06.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 07.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 08.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 09.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 11.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 12.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 13.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 14.unity
+  - enabled: 1
     path: Assets/Scenes/LevelA.unity
   - enabled: 1
     path: Assets/Scenes/LevelB.unity
-  - enabled: 0
-    path: Assets/Scenes/Level1.unity
-  - enabled: 0
-    path: Assets/Scenes/Level11.unity
-  - enabled: 0
-    path: Assets/Scenes/Level01.unity
-  - enabled: 0
-    path: Assets/Scenes/Level2.unity
-  - enabled: 0
-    path: Assets/Scenes/deneme.unity
