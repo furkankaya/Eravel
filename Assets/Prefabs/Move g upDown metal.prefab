@@ -38,7 +38,7 @@ GameObject:
   - 61: {fileID: 61000013297507580}
   m_Layer: 8
   m_Name: g 1x5 1
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,8 +211,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011680964040}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.17969, y: -2.2503476, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 170.16106, y: -1.291639, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -303,6 +303,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1beda362d924447a22ea06cd236361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToMove: {fileID: 1000010448835288}
+  startPoint: {fileID: 4000010157790450}
+  endPoint: {fileID: 4000014003538628}
+  moveSpeed: 2.4
 --- !u!212 &212000010852332768
 SpriteRenderer:
   m_ObjectHideFlags: 1
