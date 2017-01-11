@@ -18,6 +18,7 @@ public class StoryBookA : MonoBehaviour {
 	private States myState;
 
 	public string levelToLoad;		// bu kısım tamamlandığında yüklenecek bölüm !!! editör üzerinden yazılmalıdır
+	public string levelToUnlock;			// kilidi açılacak bölüm !!! editör üzerinden yazılmalıdır
 
 	void Start () {
 		myState = States.girisA;
@@ -165,7 +166,10 @@ public class StoryBookA : MonoBehaviour {
 		buttonB.text = "BÖLÜMÜ SONLANDIR";
 		buttonC.text = " ";
 
-		if (CrossPlatformInputManager.GetButtonDown("ButtonB"))
+		if (CrossPlatformInputManager.GetButtonDown ("ButtonB"))
+		{
+			PlayerPrefs.SetInt(levelToUnlock, 1);
 			SceneManager.LoadScene (levelToLoad);
+		}
 	}
 }
