@@ -518,7 +518,8 @@ MonoBehaviour:
   buttonA: {fileID: 181801474}
   buttonB: {fileID: 941356159}
   buttonC: {fileID: 1548376780}
-  levelToLoad: 
+  levelToLoad: Level05
+  levelToUnlock: Level05
 --- !u!1 &941356155
 GameObject:
   m_ObjectHideFlags: 0

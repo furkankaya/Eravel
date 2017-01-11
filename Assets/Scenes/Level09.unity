@@ -177,4 +177,5 @@ MonoBehaviour:
   buttonA: {fileID: 1711050657}
   buttonB: {fileID: 1711050656}
   buttonC: {fileID: 1711050655}
-  levelToLoad: 
+  levelToLoad: Level09.5
+  levelToUnlock: Level10
