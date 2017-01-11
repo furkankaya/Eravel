@@ -10337,6 +10337,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec610ce754658834caf4aa524c0e1d47, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &361838322 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000010592420030, guid: ec610ce754658834caf4aa524c0e1d47,
+    type: 2}
+  m_PrefabInternal: {fileID: 361838321}
 --- !u!4 &364027648 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010334513876, guid: eff8e4fdbe7873744a46e17a35d9ccca,
@@ -21878,11 +21883,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!4 &716634337 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000011508582844, guid: ec610ce754658834caf4aa524c0e1d47,
-    type: 2}
-  m_PrefabInternal: {fileID: 361838321}
 --- !u!4 &718105349 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010271804326, guid: 02ac1385e370b9a4583dca24aa8068b2,
@@ -37953,7 +37953,7 @@ Transform:
   - {fileID: 1606421937}
   - {fileID: 250114211}
   - {fileID: 2127487074}
-  - {fileID: 716634337}
+  - {fileID: 361838322}
   - {fileID: 1482957579}
   - {fileID: 22410777}
   - {fileID: 1285804582}
@@ -47936,6 +47936,16 @@ Prefab:
     - target: {fileID: 4000012866182870, guid: 516b4a39d7eaab44da7fde64ae6ab1ef, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013975112390, guid: 516b4a39d7eaab44da7fde64ae6ab1ef,
+        type: 2}
+      propertyPath: levelToUnlock
+      value: Level03
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013975112390, guid: 516b4a39d7eaab44da7fde64ae6ab1ef,
+        type: 2}
+      propertyPath: levelToLoad
+      value: Level02.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 516b4a39d7eaab44da7fde64ae6ab1ef, type: 2}
