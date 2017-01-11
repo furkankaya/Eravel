@@ -37,9 +37,9 @@ public class StoryBookA : MonoBehaviour {
 		
 	void girisA () {
 		text.text = 
-			"Eravel giriş kapısına yaklaşıp etrafına bakındı. " +
-			"Robotlar sırayla ilerleyip ana kapıdan içeri giriyorlardı. " +
-			"Kapının etrafındaki cihazlar, sıranın en önündeki robotu tarayıp bir tür giriş izni veriyor gibiydi. " +
+			"Eravel etrafta robotlar görünce Buo'nun yaşadığı yere yaklaştığını anladı. " +
+			"Robotlar sırayla büyük bir kapıdan içeri giriyorlardı. " +
+			"Kapının etrafındaki cihazlar, sıranın en önündeki robotu tarayıp bir giriş izni veriyor gibiydi. " +
 			"Kapı her seferinde yalnızca bir tane robotun geçebileceği kadar açık kalıyor, ardından kapanıyordu. " +
 			"Duvarda üzerinde yazılar ve işaretler olan bir tabela asılıydı. " +
 			"Yan tarafta ise tahtadan, eski görünümlü bir kapı vardı. ";

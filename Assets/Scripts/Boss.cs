@@ -26,6 +26,9 @@ public class Boss : MonoBehaviour {
     public GameObject rightPlatforms;	// boss sağdayken belirecek platformlar
     public GameObject leftPlatforms;	// boss soldayken belirecek platformlar
 
+	public GameObject rightHolder;		// boss'u havada tutacak platformlar
+	public GameObject leftHolder;		// boss'u havada tutacak platformlar
+
 	[HideInInspector]
 	public bool takeDamage;				// düşmana vurulduğunda zarar alma durumu
 
@@ -87,7 +90,7 @@ public class Boss : MonoBehaviour {
 		// kullanıcı alana girdiyse
 	    if(bossActive)
         {
-			theCamera.followTarget = false;
+			//theCamera.followTarget = false;
 
 			// kamerayı ortalayacak pozisyonu bul
 			Vector3 middlePosition = new Vector3( (leftPoint.transform.position.x + rightPoint.transform.position.x)/2, theCamera.transform.position.y, theCamera.transform.position.z);
@@ -118,6 +121,9 @@ public class Boss : MonoBehaviour {
 			// boss sağdaysa
             if(bossRight)
             {
+				// boss'u havada tutacak platformu oluştur
+				rightHolder.SetActive (true);
+
 				// platformların havada kalma zamanını azalt, platformlar yoksa yarat
                 if(platformCount > 0)
                 {
@@ -131,6 +137,9 @@ public class Boss : MonoBehaviour {
 			//boss soldaysa
             else
             {
+				// boss'u havada tutacak platformu oluştur
+				leftHolder.SetActive (true);
+
 				// platformların havada kalma zamanını azalt, platformlar yoksa yarat
                 if (platformCount > 0)
                 {
@@ -169,6 +178,10 @@ public class Boss : MonoBehaviour {
 
 				// sağ-solda bulunma durumunu tersini al
 				bossRight = !bossRight;
+
+				// boss zarar gördüğü anda onu havada tutan platformları kaldır
+				leftHolder.SetActive (false);
+				rightHolder.SetActive (false);
 
 				// platformları yok et
 				rightPlatforms.SetActive (false);

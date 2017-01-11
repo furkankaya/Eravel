@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.UI;
 
 // bu script bölüm seçim ekranındaki kapılara bağlanır ve bölümlere gidiş sağlar
 public class LevelDoor : MonoBehaviour
@@ -27,6 +28,15 @@ public class LevelDoor : MonoBehaviour
 	private bool canUnlockLevel;		// level unlock edebilecek durumda olup olmadığı
 
 	public int levelValue;				// bölümü açmak için kaç altın gerektiği
+
+	public GameObject theDialogueScreen;// ekranda belirecek diyalog arayüzü !!! editör üzerinden atanır
+	public Text theDialogueText;		// ekranda belirecek diyalogun yazı elemanı !!! editör üzerinden atanır
+
+	private PlayerController thePlayer;	// diyalog sırasında oyuncu durdurulurken kullanılacak, otomatik atanır
+
+	public bool playCutscene;			// bölüm başında cutscene oynayıp oynamayacağı
+	public string cutsceneToPlay;		// oynatılacak cutscene bölüm adı
+
 
 	void Start ()
 	{
@@ -59,25 +69,38 @@ public class LevelDoor : MonoBehaviour
 		// loadLevel durumunu 0 yap, kapılara gidilirse 1 olur
 		canLoadLevel = false; 
 		canUnlockLevel = false;
-			
+
+		// diyalog ekranında durdurma metodu çağrılacak
+		thePlayer = FindObjectOfType<PlayerController>();
 	}
 
 	void Update()
 	{
-		// bölüme gidebilir durumdaysa ve enter tuşuna basılırsa bölümü yükle
+		// bölüme gidebilir durumdaysa ve enter tuşuna basılırsa bölümü (veya cutscene'ini) yükle
 		if (canLoadLevel)
 		{
 			if (CrossPlatformInputManager.GetButtonDown ("EnterDoor"))
 			{
-				SceneManager.LoadScene (levelToLoad);
+				if (playCutscene){
+					SceneManager.LoadScene (cutsceneToPlay);
+				} else {
+					SceneManager.LoadScene (levelToLoad);
+				}
 			}
 		}
 
 		// bölüm kilidi açılabilir durumdaysa ve unlock tuşuna basılırsa bölüm açma diyalogu göster
-		if (canUnlockLevel)
+		if (canUnlockLevel && CrossPlatformInputManager.GetButtonDown ("UnlockDoor"))
 		{
-			if ( CrossPlatformInputManager.GetButtonDown ("UnlockDoor") && PlayerPrefs.GetInt("CoinWallet")>levelValue )
-			{
+			Time.timeScale = 0f;
+			theDialogueScreen.SetActive(true);
+			thePlayer.canMove = false;
+			theDialogueText.text = "BÖLÜMÜ " + levelValue.ToString() + " ALTIN KARŞILIĞINDA AÇMAK İSTİYOR MUSUN?";
+		}
+
+		if (canUnlockLevel && CrossPlatformInputManager.GetButtonDown ("DialogueYes"))
+		{
+			if (PlayerPrefs.GetInt ("CoinWallet") >= levelValue) {
 				unlocked = true;
 				doorTop.sprite = doorTopOpen;
 				doorBottom.sprite = doorBottomOpen;
@@ -85,13 +108,22 @@ public class LevelDoor : MonoBehaviour
 				unlockDoorButton.SetActive (false);
 				enterDoorButton.SetActive (true);
 			}
+
+			Time.timeScale = 1f;
+			theDialogueScreen.SetActive(false);
+			//theDialogueScreen.transform.parent.gameObject.SetActive(true);
+			thePlayer.canMove = true;
 		}
 
-
+		if (CrossPlatformInputManager.GetButtonDown ("DialogueNo"))
+		{
+			Time.timeScale = 1f;
+			theDialogueScreen.SetActive(false);
+			thePlayer.canMove = true;
+		}
 
 	}
-
-
+		
     void OnTriggerStay2D(Collider2D other)
     {
         if(other.tag == "Player")
@@ -99,10 +131,12 @@ public class LevelDoor : MonoBehaviour
 			if (unlocked)
 			{
 				enterDoorButton.SetActive (true);
+				unlockDoorButton.SetActive (false);
 				canLoadLevel = true;
 			}
 			else
 			{
+				enterDoorButton.SetActive (false);
 				unlockDoorButton.SetActive (true);
 				canUnlockLevel = true;
 			}
