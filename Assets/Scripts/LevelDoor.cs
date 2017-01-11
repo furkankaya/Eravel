@@ -37,12 +37,13 @@ public class LevelDoor : MonoBehaviour
 	public bool playCutscene;			// bölüm başında cutscene oynayıp oynamayacağı
 	public string cutsceneToPlay;		// oynatılacak cutscene bölüm adı
 
+	public Text coinText;				// arayüzde altın sayısını gösteren eleman
+
 
 	void Start ()
 	{
 		// Level01 her zaman açık
         PlayerPrefs.SetInt("Level01", 1);
-		PlayerPrefs.SetInt("LevelA", 1);
 
 		// kapının ait olduğu level'in açık olup olmadığı PlayerPrefs'ten okunur
         if(PlayerPrefs.GetInt(levelToLoad) == 1)
@@ -100,13 +101,24 @@ public class LevelDoor : MonoBehaviour
 
 		if (canUnlockLevel && CrossPlatformInputManager.GetButtonDown ("DialogueYes"))
 		{
-			if (PlayerPrefs.GetInt ("CoinWallet") >= levelValue) {
+			if (PlayerPrefs.GetInt ("CoinWallet") >= levelValue)
+			{
+				int wallet = PlayerPrefs.GetInt ("CoinWallet");
+				wallet = wallet - levelValue;
+				PlayerPrefs.SetInt ("CoinWallet", wallet);
+				coinText.text = "X " + wallet.ToString();
+
 				unlocked = true;
+				PlayerPrefs.SetInt(levelToLoad, 1);
+
 				doorTop.sprite = doorTopOpen;
 				doorBottom.sprite = doorBottomOpen;
 
 				unlockDoorButton.SetActive (false);
 				enterDoorButton.SetActive (true);
+
+				canLoadLevel = true;
+				canUnlockLevel = false;
 			}
 
 			Time.timeScale = 1f;
@@ -121,7 +133,6 @@ public class LevelDoor : MonoBehaviour
 			theDialogueScreen.SetActive(false);
 			thePlayer.canMove = true;
 		}
-
 	}
 		
     void OnTriggerStay2D(Collider2D other)
@@ -132,13 +143,13 @@ public class LevelDoor : MonoBehaviour
 			{
 				enterDoorButton.SetActive (true);
 				unlockDoorButton.SetActive (false);
-				canLoadLevel = true;
+				this.canLoadLevel = true;
 			}
 			else
 			{
 				enterDoorButton.SetActive (false);
 				unlockDoorButton.SetActive (true);
-				canUnlockLevel = true;
+				this.canUnlockLevel = true;
 			}
 
         }

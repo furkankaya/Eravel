@@ -819,12 +819,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e142f8a94c1df744b4c80037ee05110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: LevelA
+  firstLevel: Level00.5
   levelSelect: LevelSelect
   levelNames:
-  - LevelA
-  - LevelB
-  - LevelC
+  - Level01
+  - Level02
+  - Level03
+  - Level04
+  - Level05
+  - Level06
+  - Level07
+  - Level08
+  - Level09
+  - Level10
+  - Level11
+  - Level12
+  - Level13
+  - Level14
   startingLives: 3
 --- !u!1 &1558078282
 GameObject:

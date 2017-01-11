@@ -129,6 +129,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012404261006, guid: e2f69afb1667a5048aa8d9d344db30e0,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e44627c971e70b488378f524c0eb412,
+        type: 3}
+    - target: {fileID: 114000011450353132, guid: e2f69afb1667a5048aa8d9d344db30e0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8d187127d40a64a468ef3bc28a3236f5,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 114000012846149334, guid: e2f69afb1667a5048aa8d9d344db30e0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e2f69afb1667a5048aa8d9d344db30e0, type: 2}

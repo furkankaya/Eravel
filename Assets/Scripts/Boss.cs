@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour {
 
@@ -159,10 +160,7 @@ public class Boss : MonoBehaviour {
 
 				if (currentHealth <= 0)
 				{
-					// levelExit.SetActive (true);		// levelExit'için tasarlanan bir kısım bu kod ile aktifleşir ve bölümden çıkılabilir
-					theCamera.followTarget = true;
-					// boss savaşı bittiği için boss sistemini durdur
-					gameObject.SetActive (false);
+					SceneManager.LoadScene ("Level14.5");
 				}
 
 				// sağdaysa sola ışınla
