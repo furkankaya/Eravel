@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 7
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 7
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 4
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_DirectLightInLightProbes: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+  m_LightingDataAsset: {fileID: 0}
+  m_RuntimeCPUUsage: 25
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    cellSize: 0.16666667
+    manualCellSize: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1001 &2102084273
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000013766437822, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013766437822, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013766437822, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013766437822, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013766437822, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013766437822, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013766437822, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013766437822, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012457452796, guid: c28586190eb7eee4ca96cb63718bbe39,
+        type: 2}
+      propertyPath: m_EffectColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011764723576, guid: c28586190eb7eee4ca96cb63718bbe39,
+        type: 2}
+      propertyPath: images.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a2fe1889eee4e64390d41a275b7fed6,
+        type: 3}
+    - target: {fileID: 114000011764723576, guid: c28586190eb7eee4ca96cb63718bbe39,
+        type: 2}
+      propertyPath: images.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: f440f358525751146ae39d5a3c227f9b,
+        type: 3}
+    - target: {fileID: 114000011764723576, guid: c28586190eb7eee4ca96cb63718bbe39,
+        type: 2}
+      propertyPath: images.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: f7703f45b0e61d1459aa12742d17ce0d,
+        type: 3}
+    - target: {fileID: 114000011764723576, guid: c28586190eb7eee4ca96cb63718bbe39,
+        type: 2}
+      propertyPath: levelToLoad
+      value: Level11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011764723576, guid: c28586190eb7eee4ca96cb63718bbe39,
+        type: 2}
+      propertyPath: texts.Array.data[0]
+      value: "Eravel kendini kaybetmi\u015F halde \xE7ok uzun s\xFCre ko\u015Fup,
+        \u0131ss\u0131z bir yerde d\xFC\u015F\xFCp kald\u0131. Ondan \xF6nce arkada\u015Flar\u0131n\u0131n
+        ba\u015F\u0131na gelen de buydu."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011764723576, guid: c28586190eb7eee4ca96cb63718bbe39,
+        type: 2}
+      propertyPath: texts.Array.data[1]
+      value: "Prens Yanora orada de\u011Fildi. Arkada\u015Flar\u0131n\u0131n anlatt\u0131\u011F\u0131na
+        g\xF6re Yanora, Gizmos ile gezegendeki canl\u0131lar\u0131 kontrol alt\u0131na
+        almak i\xE7in i\u015Fbirli\u011Fi yap\u0131yordu."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011764723576, guid: c28586190eb7eee4ca96cb63718bbe39,
+        type: 2}
+      propertyPath: texts.Array.data[2]
+      value: "Prens gezegeni kontrol alt\u0131na al\u0131p, kral olan babas\u0131n\u0131n
+        g\xF6z\xFCne girmeyi ama\xE7l\u0131yordu. Eravel ve arkada\u015Flar\u0131
+        onu engellemek i\xE7in yola koyuldular."
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c28586190eb7eee4ca96cb63718bbe39, type: 2}
+  m_IsPrefabParent: 0
