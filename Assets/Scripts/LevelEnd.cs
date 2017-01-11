@@ -64,7 +64,7 @@ public class LevelEnd : MonoBehaviour
 		// müzik durur
         theLevelManager.levelMusic.Stop();
 		// bölüm bitirme müziği oynatılır
-        theLevelManager.gameOverMusic.Play();
+        //theLevelManager.gameOverMusic.Play();
 
 		// oyuncunun hızı sıfırlanır
         thePlayer.myRigidbody.velocity = Vector3.zero;

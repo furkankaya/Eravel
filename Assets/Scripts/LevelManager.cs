@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 // oyunun merkezi modülü. pek çok görevi var.
 public class LevelManager : MonoBehaviour
@@ -64,6 +65,11 @@ public class LevelManager : MonoBehaviour
      
 		// altın sayısını ekrana yaz
         coinText.text = "X " + coinCount;
+		if (SceneManager.GetActiveScene ().name == "LevelSelect")
+		{
+			coinText.text = "X " + PlayerPrefs.GetInt ("CoinWallet");
+		}
+
 
 		// dosyadan ışınlanma sayısını oku
         currentLives = PlayerPrefs.GetInt("LifeWallet");

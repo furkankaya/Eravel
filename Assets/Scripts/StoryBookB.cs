@@ -41,7 +41,7 @@ public class StoryBookB : MonoBehaviour {
 
 	void koridor1A () {
 		text.text = 
-			"Büyücü Gizmos'un malikanesi ahşap döşememelere ve taştan duvarlara sahipti. " +
+			"Büyücü Gizmos'un malikanesi ahşap döşemelere ve taştan duvarlara sahipti. " +
 			"Duvarlardaki sıra sıra raflarda birbirinden garip cisimler, kavanozlar ve şişeler vardı. " +
 			"Eravel, böyle bir yeri daha önce hiç görmediğinden meraklı gözleri bir o yana bir bu yana dönüyordu. " +
 			"Düz devam eden ana koridorun solunda ve sağında birer kapı vardı. ";
