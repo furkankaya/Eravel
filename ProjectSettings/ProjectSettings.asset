@@ -6,12 +6,12 @@ PlayerSettings:
   serializedVersion: 8
   productGUID: 4f1bf86aecf07c345a32812cc2bb128d
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 2
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Unity_Game_2D_Platformer_Game
+  companyName: Furkan Kaya
+  productName: "Eravel ve Zihin Ta\u015F\u0131"
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenStyle: 0
@@ -164,8 +164,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: D:/Project_Files/Unity/Eravel/user.keystore
+  AndroidKeyaliasName: eravel
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 1

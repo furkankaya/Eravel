@@ -23,7 +23,8 @@ public class MainMenu : MonoBehaviour {
 		// tüm bölümleri kilitle
         for(int i=0; i<levelNames.Length; i++)
         {
-            PlayerPrefs.SetInt(levelNames[i], 0);
+            PlayerPrefs.SetInt(levelNames[i], 1);
+			PlayerPrefs.SetInt (levelNames [4], 0);
         }
 
 		// kalıcı diğer değerleri resetle
